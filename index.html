@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>  
+
+   var x = +prompt("Enter the number") 
+   var n = +prompt("Enter the number")
+   
+        function power(x, n) {
+            var result =  Math.pow(x, n)
+            return result
+        }    
+        document.write(power(x, n))
+    
+        var fiboNumber = alert("Enter the fibo number")
+
+    var stopNumber = +prompt("enter the number")
+    var i;
+    var fib = [0, 1];
+    var firstNumbers = () => {
+        document.writeln(0)
+        document.writeln(1)
+    }
+    var fibbonachi = (x) => {
+        if (x === 1) {
+            document.writeln(0)
+        } else if (x === 2) {
+            firstNumbers
+        } else { 
+        firstNumbers
+        for (i = 2; i <= x; i++) 
+        {  
+        fib[i] = fib[i - 2] + fib[i - 1];
+        document.writeln(fib[i]);
+        }
+    }
+}
+    
+    fibbonachi(stopNumber)
+
+var now = new Date()
+var minutes = now.getMinutes()
+console.log(minutes)
+
+if (minutes >= 0 && minutes < 15) {
+    console.log("1ая четверть часа")
+} else if (minutes >= 15 && minutes < 30) {
+    console.log("2ая четверть часа")
+} else if  (minutes >= 30 && minutes < 45) {
+    console.log("3ая четверть часа")
+} else {
+    console.log("4ая четверть часа")
+}
+
+
+    </script>
+</body>
+</html>
