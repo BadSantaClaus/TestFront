@@ -1,62 +1,38 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Тестовая Страница</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+
+    <!-- <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.760178, 37.618575],
+                zoom: 16
+            });
+        }
+    </script> -->
+
+<!-- <script src="icon_customImage.js" type="text/javascript"></script> -->
+<script src="placemark.js" type="text/javascript"></script>
+<style>
+    html, body, #map {
+        width: 80%; height: 80%; padding: 0; margin: 0;
+    }
+</style>
 </head>
 <body>
-   <script>  
-   var x = +prompt("Enter the number") 
-   var n = +prompt("Enter the number")
-   
-        function power(x, n) {
-            var result =  Math.pow(x, n)
-            return result
-        }    
-        document.write(power(x, n))
-    
-        var fiboNumber = alert("Enter the fibo number")
-
-    var stopNumber = +prompt("enter the number")
-    var i;
-    var fib = [0, 1];
-    var firstNumbers = () => {
-        document.writeln(0)
-        document.writeln(1)
-    }
-    var fibbonachi = (x) => {
-        if (x === 1) {
-            document.writeln(0)
-        } else if (x === 2) {
-            firstNumbers
-        } else { 
-        firstNumbers
-        for (i = 2; i <= x; i++) 
-        {  
-        fib[i] = fib[i - 2] + fib[i - 1];
-        document.writeln(fib[i]);
-        }
-    }
-}
-    
-    fibbonachi(stopNumber)
-
-var now = new Date()
-var minutes = now.getMinutes()
-console.log(minutes)
-
-if (minutes >= 0 && minutes < 15) {
-    console.log("1ая четверть часа")
-} else if (minutes >= 15 && minutes < 30) {
-    console.log("2ая четверть часа")
-} else if  (minutes >= 30 && minutes < 45) {
-    console.log("3ая четверть часа")
-} else {
-    console.log("4ая четверть часа")
-}
-
-    </script>
+    <h1>Тестовая страница</h1>
+    <p>Привет, мир!</p>
+    <p><a href="https://www.google.com/">Ссылка на google</a></p>
+    <img src="https://geekhero.ru/wp-content/uploads/2014/10/simpsons_walls_28.jpg" width="800" height="500">
+    <div id="map"></div>
+    <!-- style="width: 600px; height: 400px" -->
 </body>
 </html>
